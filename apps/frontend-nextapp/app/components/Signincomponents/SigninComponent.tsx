@@ -3,11 +3,10 @@ import { Button, Card, Grid, TextField, Typography } from "@mui/material"
 import { Url } from "next/dist/shared/lib/router/router";
 import { useRouter } from "next/navigation";
 import { useState } from "react"
-import { ec2 } from "util/env";
-import {getCookie, setCookie} from "../../util/cookies"
-import { RecoilRoot, useRecoilState } from "recoil";
-import {isSignedin} from "../../recoiatoms/issignin"
-import React from "react";
+import { ec2 } from "@/util/env";
+import {getCookie, setCookie} from "../../../util/cookies"
+// import { RecoilRoot, useRecoilState } from "recoil";
+import {isSignedin} from "recoiatoms/issignin"
 export default function SigninComponent(){
     const router = useRouter();
     const nav = (page: string) => {
@@ -16,7 +15,7 @@ export default function SigninComponent(){
     const center ={display:"flex", justifyContent:"center"}
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
-    const [isi,setIsi]=useRecoilState(isSignedin)
+    const [isi,setIsi]=useState(false)
 
     const handleSignin=async () => {
         const response = await fetch(ec2+'/login', {

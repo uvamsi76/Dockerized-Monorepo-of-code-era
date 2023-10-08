@@ -1,5 +1,5 @@
 "use client"
-import Popup from 'components/popupcomponents/Popup';
+import Popup from '@/app/components/popupcomponents/Popup';
 import React, { useState } from 'react'
 
 const logout = () => {

@@ -1,11 +1,11 @@
 
 import { Inter } from 'next/font/google'
 import { Grid } from '@mui/material'
-import HomeComponent from 'components/HomeComponent'
+import HomeComponent from '@/app/components/HomeComponent'
 import {CourseType, CoursesType} from "schemas/types/courseTypes"
 import { ec2 } from 'util/env'
 import { coursesatom } from 'recoiatoms/courses'
-import {useRecoilState} from "recoil"
+// import {useRecoilState} from "recoil"
 import { useEffect } from 'react'
 import { GetStaticProps } from 'next';
 import { getCookie } from 'util/cookies'

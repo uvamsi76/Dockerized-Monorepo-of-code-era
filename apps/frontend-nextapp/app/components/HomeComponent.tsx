@@ -3,9 +3,8 @@ import Part1 from "./home_components/Part1";
 import Part2 from "./home_components/Part2";
 import Part3 from "./home_components/Part3";
 // import Carousel from "./carousel";
-import { CoursesType } from "../schemas/types/courseTypes";
-import React from "react";
-// import Layout from "./layouts/layout";
+import { CoursesType } from "schemas/types/courseTypes";
+import Layout from "./layouts/layout";
 
 export default function  HomeComponent({courses}:CoursesType){
     const center ={display:"flex", justifyContent:"center"}

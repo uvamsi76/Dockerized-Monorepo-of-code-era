@@ -1,7 +1,6 @@
-import { CourseType, CoursesType } from "../../schemas/types/courseTypes";
-import { ec2 } from "util/env";
+import { CourseType, CoursesType } from "schemas/types/courseTypes";
+import { ec2 } from "@/util/env";
 import { Typography } from "@mui/material";
-import React from "react";
 
 export default function Part3({courses}:CoursesType){
     return(

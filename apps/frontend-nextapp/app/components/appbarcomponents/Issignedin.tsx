@@ -4,7 +4,7 @@ import { cookies } from 'next/headers';
 import { useRouter } from 'next/navigation';
 import {isSignedin} from 'recoiatoms/issignin'
 import React, { useEffect, useState } from 'react'
-import { useRecoilState } from 'recoil';
+// import { useRecoilState } from 'recoil';
 import Cookies from 'js-cookie';
 import Popup from '../popupcomponents/Popup';
 

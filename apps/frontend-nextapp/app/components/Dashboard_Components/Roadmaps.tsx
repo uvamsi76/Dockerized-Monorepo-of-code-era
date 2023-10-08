@@ -1,10 +1,8 @@
-import React from "react"
-
-export default function MyCollections(){
+export default function Roadmap(){
     const center ={display:"flex", justifyContent:"center"}
     return (
         <div style={center}>
-            MyCollections
+            Roadmap
         </div>
     )
 }

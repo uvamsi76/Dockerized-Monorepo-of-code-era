@@ -2,7 +2,6 @@
 import { Button, Grid, Typography } from "@mui/material"
 import { Url } from "next/dist/shared/lib/router/router";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 export default function Part1(){
     const router = useRouter();

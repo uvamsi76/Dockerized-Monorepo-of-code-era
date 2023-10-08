@@ -1,10 +1,9 @@
 import { CourseType } from "schemas/types/courseTypes"
 import { purchasedCoursesType, purchasedCourse } from "schemas/types/purchasedCourseTypes"
-import { getCookie } from "util/cookies"
-import { ec2 } from "util/env"
+import { getCookie } from "@/util/cookies"
+import { ec2 } from "@/util/env"
 import { Typography } from "@mui/material"
 import { useEffect, useState } from "react"
-import React from "react"
 
 // export async function getServerSideProps() {
 //     const res = await fetch(ec2+`/purchasedCourses`)

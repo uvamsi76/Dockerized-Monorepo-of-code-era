@@ -1,5 +1,5 @@
-"use Client"
-import DashboardComponent from "components/DashboardComponent";
+"use client"
+import DashboardComponent from "@/app/components/DashboardComponent";
 import { purchasedcoursesatom } from "recoiatoms/purchasedcourses";
 import { CourseType } from "schemas/types/courseTypes"
 import { purchasedCoursesType, purchasedCourse } from "schemas/types/purchasedCourseTypes"
@@ -8,7 +8,7 @@ import { ec2 } from "util/env"
 import cookies from 'js-cookie';
 import { NextPageContext } from "next";
 import { useEffect, useState } from "react";
-import { useRecoilState } from "recoil";
+// import { useRecoilState } from "recoil";
 
 // export const getStaticProps= async ({ req, res }: NextPageContext) => {
 //     const token= getCookie("token")
@@ -37,7 +37,7 @@ import { useRecoilState } from "recoil";
 export default function Dashboard(){
     const token= getCookie("token")
     console.log(token)
-    const [courses,setCourses]=useRecoilState(purchasedcoursesatom)
+    const [courses,setCourses]=useState()
     if(!token) return
     useEffect(()=>{
     fetch(ec2+'/purchasedCourses', {

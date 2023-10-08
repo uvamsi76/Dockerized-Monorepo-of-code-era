@@ -1,4 +1,4 @@
-import { courseralogo } from 'util/env'
+import { courseralogo } from '@/util/env'
 import React from 'react'
 import Link from 'next/link'
 

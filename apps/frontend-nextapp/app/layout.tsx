@@ -1,10 +1,11 @@
 
 // import './globals.css'
-import { Appbar } from 'components/Appbar'
+import { Appbar } from '@/app/components/Appbar'
 // import Appbarcomponent from '@/components/Appbarcomponent'
-import Footer from 'components/footer'
+import Footer from '@/app/components/footer'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+// import { RecoilRoot } from 'recoil'
 
 const inter = Inter({ subsets: ['latin'] })
 

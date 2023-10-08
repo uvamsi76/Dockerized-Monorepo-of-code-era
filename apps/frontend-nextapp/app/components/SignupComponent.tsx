@@ -1,15 +1,14 @@
 "use client"
 import { Button, Card, Grid, TextField, Typography } from "@mui/material"
 import { Url } from "next/dist/shared/lib/router/router";
-import { useRouter } from "next/router";
-import React from "react";
+import { useRouter } from "next/navigation";
 import { useState } from "react"
-import { ec2 } from "util/env";
+import { ec2 } from "@/util/env";
 // import { parse, serialize } from 'cookie';
 
-export default function SigninComponent(){
+export default function SignupComponent(){
     const router = useRouter();
-    const nav = (page: Url) => {
+    const nav = (page: string) => {
       router.push(page);
     };
     const center ={display:"flex", justifyContent:"center"}
@@ -59,7 +58,7 @@ export default function SigninComponent(){
                     <div style={{display:"flex",justifyContent:"space-between",margin:"10%"}}>
                         <Button variant="contained" style={{marginRight:"10%"}} onClick={handleSignin}>signup</Button>
                     </div>
-                    <Button size="small" style={{fontSize:"70%",marginBottom:"10%"}} onClick={()=>nav('/signin')}>sigin up instead?</Button>
+                    <Button size="small" style={{fontSize:"70%",marginBottom:"10%"}} onClick={()=>nav('/signin')}>sigin instead?</Button>
                 </Card>
             </Grid>
         </Grid>
