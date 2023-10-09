@@ -5,8 +5,8 @@ import jwt from "jsonwebtoken";
 import { User,Admin,Course } from "../db/db";
 import {SECRET,authenticateJwt} from "../middleware/auth"
 import { string, z } from "zod"
-import { adminSchema} from "../zodschemas/adminschema"
-import { courseSchema } from "../zodschemas/courseschema"
+import { adminSchema} from "zodschemas/adminschema"
+import { courseSchema } from "zodschemas/courseschema"
 import mongoose from "mongoose";
 
 //Signup Route

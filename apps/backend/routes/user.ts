@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
 import { User,Admin,Course } from "../db/db";
 import {SECRET,authenticateJwt} from "../middleware/auth"
-import {userSchema , userloginSchema} from "../zodschemas/userschema"
+import {userSchema , userloginSchema} from "zodschemas/userschema"
 import {handlesignup ,handlelogin ,handlecourse,handlegetpurchasedcourse} from "../controllers/user"
 
 const userrouter=express.Router();

@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import { User,Admin,Course } from "../db/db";
 import {SECRET,authenticateJwt} from "../middleware/auth"
 import { z } from "zod"
-import { adminSchema } from "../zodschemas/adminschema"
+import { adminSchema } from "zodschemas/adminschema"
 import {handlesignup, handleMe, handleaddcourse, handleupdatecourse, handledeletecourse} from "../controllers/admin"
 const adminrouter=express.Router();
 adminrouter.use(bodyParser.json())
