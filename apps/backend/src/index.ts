@@ -27,7 +27,7 @@ app.use("/api",userrouter)
 const murl=process.env.MONGO_URL || "null"
 mongoose.connect(murl, { dbName: "codes-era" });
 console.log("murl")
-app.get('/',(req,res)=>{
+app.get('/test',(req,res)=>{
   res.json("working fine mowa ")
 })
 
