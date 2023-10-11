@@ -23,6 +23,8 @@ const inter = Inter({ subsets: ['latin'] })
 //   return { props: { courses } }
 // }
 
+
+
 export default async function  Home() {
   // const [courses,setCourses]=useRecoilState(coursesatom)
   // useEffect(()=>{
