@@ -2,7 +2,7 @@ name: Deploy next-app
 on:
   push:
     paths:
-      - 'apps/frontend-nextapp/**'
+      - 'apps/frontend-nextapp/*'
     branches:
       - main
 jobs:
