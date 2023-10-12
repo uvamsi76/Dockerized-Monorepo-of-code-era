@@ -21,7 +21,7 @@ const inter = Inter({ subsets: ['latin'] })
 //   const crs = await res.json()
 //   const courses:CourseType[]=crs.courses
 //   return { props: { courses } }
-// }
+// }   
 
 
 
