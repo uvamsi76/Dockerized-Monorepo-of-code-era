@@ -26,4 +26,4 @@ jobs:
         chmod 600 keyfile
         mkdir -p ~/.ssh
         cp known_hosts ~/.ssh/known_hosts
-        ssh -t -i keyfile ubuntu@ec2-16-171-129-151.eu-north-1.compute.amazonaws.com "sudo bash /home/ubuntu/codes-era_monorepo/Dockerized-Monorepo-of-codesera/apps/backend/deploy.sh"
+        ssh -t -i keyfile ubuntu@ec2-16-171-129-151.eu-north-1.compute.amazonaws.com "sudo bash /home/ubuntu/codes-era_monorepo/Dockerized-Monorepo-of-codesera/apps/frontend-nextapp/deploy.sh"
