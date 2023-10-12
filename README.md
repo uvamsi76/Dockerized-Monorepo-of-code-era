@@ -1,3 +1,6 @@
+## Unlucky cant deploy in aws because of storage issues ##
+
+
 # Turborepo starter
 
 This is an official starter Turborepo.
