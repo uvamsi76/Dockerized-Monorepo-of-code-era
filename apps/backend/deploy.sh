@@ -14,7 +14,7 @@ echo --------------------------------------------------
 sudo docker build . -t backend-docker
 echo docker build
 echo --------------------------------------------------
-sudo docker run -d -p 3010:3010 backend-docker
+sudo docker run -p 3010:3010 backend-docker
 echo docker running
 echo --------------------------------------------------
 mv Dockerfile ./docker/backend

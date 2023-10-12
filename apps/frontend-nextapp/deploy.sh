@@ -22,7 +22,7 @@ sudo docker build . -t frontend-nextapp-docker
 echo docker built
 echo --------------------------------------------------
 
-sudo docker run -d -p 3000:3000 frontend-nextapp-docker
+sudo docker run -p 3000:3000 frontend-nextapp-docker
 
 echo docker ran
 
