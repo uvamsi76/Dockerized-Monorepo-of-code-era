@@ -6,3 +6,4 @@ git pull origin main
 mv docker/backend/Dockerfile .
 sudo docker build . -t backend-docker
 sudo docker run -d -p 3010:3010 backend-docker
+mv Dockerfile ./docker/backend
