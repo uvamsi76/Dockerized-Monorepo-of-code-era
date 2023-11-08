@@ -7,7 +7,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "start:express":"cd apps/backend && yarn start",
     "start:next":"cd apps/frontend-nextapp && yarn start",
-    "start":"yarn start:express && yarn start:next"
+    "start":"yarn start:express && yarn start:next",
+    "start-docker-next":"cd apps/frontend-nextapp && yarn start-docker-next",
+    "start-docker-backend":"cd apps/backend && yarn start-docker"
   },
   "devDependencies": {
     "eslint": "^8.48.0",
