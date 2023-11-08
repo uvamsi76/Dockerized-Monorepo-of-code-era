@@ -28,7 +28,8 @@
     "test": "tsc -b && node ./dist/index.js",
     "dev":"npx nodemon ./src/index.ts",
     "build": "esbuild ./src/index.js --bundle --platform=node --outfile=dist/index.js",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "start:docker":"sudo bash deploy.sh"
   },
   "keywords": [],
   "author": "",
