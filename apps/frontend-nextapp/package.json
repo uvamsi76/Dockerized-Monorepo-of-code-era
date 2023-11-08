@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start --port 3000",
     "lint": "next lint",
-    "start:docker":"sudo bash deploy.sh"
+    "start:docker-next":"sudo bash deploy.sh"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
